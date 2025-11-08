@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { useTodoStore } from '../store/Store'
 import { Edit2, Trash2 } from 'lucide-react'
-
+import { useTodoStore } from '../store/State'
 const TodoList = () => {
   const [text, setText] = useState('')
   const [editingId, setEditingId] = useState<number | null>(null)
